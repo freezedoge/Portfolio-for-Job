@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="portfoliomedia.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="keyframes.css">
+    <script src="portfolio.js"></script>  
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67df278a36.js" crossorigin="anonymous"></script>
+    
+
+    <title>Jericho Parilla</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="containers header-front">
+            <header class="header">
+                <div class="logo-title">
+                    <h1><span id="ec"class="ec">EC</span><span id="ho" class="ho">HO</span></h1>
+                </div>
+            <nav class="navigation">
+                <ul id="sidemenu">
+                    <li><a href="#home" data-text="Home"> <i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="about.html" data-text="About"><i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a href="#education" data-text="Education"><i class="fa-solid fa-book"></i></a></li>
+                    <li><a href="#skills" data-text="Skills"><i class="fa-solid fa-person-chalkboard"></i></a></li>
+                    <li><a href="#contact" data-text="Contact"><i class="fa-solid fa-address-book"></i></a></li>  
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            </header>  
+            <div class="containers middle-front">
+                <div class="div middle-left">
+                    <h1>
+                        <span> Hello World! I'm </span> <br>
+                        <div class="echo-wave">
+                            <span class="echo e">E</span> 
+                            <span class="echo c">C</span> 
+                            <span class="echo h">H</span> 
+                            <span class="echo o">O</span> 
+                            <i class="fa-solid fa-hand"></i><br>
+                        </div> A
+                        <span class="text"></span>
+                    <div class="hire-me">
+                        <button class="hire">
+                            HIRE ME
+                        </button>
+                    </div>
+                        <ul class="socmed-icons1">
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a></li>
+                            <li><a href="https://gmail.com/" target="_blank"><i class="fa-regular fa-envelope"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                            <li><a href="https://www.messenger.com/" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                            <li><a href="https://github.com/freezedoge?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </h1>    
+                </div>
+                <img class= "img2" src="images/animepic.png" alt="my-image"> 
+            </div>           
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
+
+<script>
+    function switchToNightMode() {
+      document.body.classList.remove("white");
+      document.body.classList.add("dark");
+      localStorage.setItem("mode", "dark");
+    }
+  
+    function switchToDayMode() {
+      document.body.classList.add("white");
+      document.body.classList.remove("dark");
+      localStorage.setItem("mode", "light");
+    }
+    var storedMode = localStorage.getItem("mode");
+    if (storedMode === "dark") {
+      switchToNightMode();
+    } else {
+      switchToDayMode();
+    }
+  
+    var habitHeading = document.getElementById("ec");
+    var apparelHeading = document.getElementById("ho");
+  
+    habitHeading.addEventListener("click", switchToNightMode);
+    apparelHeading.addEventListener("click", switchToDayMode);
+  </script>

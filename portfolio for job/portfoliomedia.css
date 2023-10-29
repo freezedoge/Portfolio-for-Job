@@ -1,0 +1,353 @@
+/* Large Mobile Phones 425px RED Large Mobile Phones 425px RED Large Mobile Phones 425px RED Large Mobile Phones 425px RED */
+@media(min-width: 425px){  /* Large Mobile Phones 425px RED */
+    body{
+        border: 2px solid red;
+    }
+    .img2{
+        margin-left: 180px;
+        display: flex;
+        max-width: 80%;
+    }
+    .middle-left h1{
+        font-size: 1.3rem;
+    }
+    .socmed-icons1  li {
+        margin-right: .6rem;
+        margin-left: .6rem;
+    }
+}
+
+
+/* TABLETS 768px VIOLET  TABLETS 768px VIOLET TABLETS 768px VIOLET TABLETS 768px VIOLET TABLETS 768px VIOLET*/
+@media(min-width: 768px){
+
+    body{
+        border: 2px solid violet;
+    }
+    .middle-front{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .middle-left{
+        position: relative;
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .img2{
+        max-width: 100%;
+        margin: auto;
+    }
+    .middle-left h1{
+        margin-top: 4rem;
+    }
+    .socmed-icons1  li a .fa-brands, .fa-regular {
+        font-size: 2em;
+    }
+    .socmed-icons1  li a::before {
+        font-size: 2em;
+    }
+}
+
+
+@media(min-width:1024px){ /* LAPTOPS 1024px GREEN LAPTOPS 1024px GREEN LAPTOPS 1024px GREEN LAPTOPS 1024px GREEN*/
+
+    body{
+        border: 2px solid green;
+    }
+    .header{
+        display: flex;
+    }
+    .header{  /*LOGO and NAV*/ /*border: 2px solid green;*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        position: fixed;
+        /* border: 2px solid red; */
+    }
+    nav ul{
+        overflow: visible;
+        height: 100%;
+        right: 0;
+        padding-top: 0;
+        background: none;
+    }
+    .navigation ul li { /*border: 2px solid red;*/
+        list-style-type: none;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        transition: .5s;  /*Transition for the entrance of the nav menus*/
+    }
+
+    .navigation ul li a{ /*The nav menu words themselves*/ /*border: 2px solid yellow;*/
+        padding: 5px;
+        /* border: 2px solid yellow; */
+        color: var(--secondary-color);
+        display: inline-block;
+        transition: transform .3s;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .navigation ul li a:hover{ /*The text themselves after hover*/
+        transform: scale(1.2);
+        color: var(--primary-color);
+        opacity: 1;
+    }
+    .navigation ul li a::before{ /*The text under*/
+        content: attr(data-text); 
+        bottom: 10px;
+        left: 25%;  
+        font-size: 1rem;
+        opacity: 0;
+        transition: .5s;
+    }
+    .navigation ul li a:hover::before{
+        bottom: -40px;
+
+    }
+
+    .middle-front{
+        margin-top: 8rem;
+    }
+    ul.socmed-icons1 {
+        margin-top: 2em;
+        justify-content: center;
+        position: relative;
+        display: flex;
+    }
+    .socmed-icons1  li {
+        position: relative;
+        list-style: none;
+        margin-left: 1em;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+    .socmed-icons1  li a {
+        text-decoration: none;
+
+    }
+    .socmed-icons1  li a .fa-brands, .fa-regular {
+        font-size: 2.5em;
+        color: #222;
+    }
+    .socmed-icons1  li a::before {
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2.5em;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    .fa-solid.fa-bars{
+        display: none;
+    }
+    .fa-solid.fa-x{
+        display: none;
+    }
+
+}
+
+
+@media(min-width:1440px){  /* XL LAPTOPS 1440px YELLOW XL LAPTOPS 1440px YELLOW XL LAPTOPS 1440px YELLOW XL LAPTOPS 1440px YELLOW*/
+    body{
+        border: 2px solid yellow;
+    }
+    .header{
+        /* animation: slideUp .5s; */
+    }
+    .navigation ul li{
+        font-size: 1.2em;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .middle-front{
+        height: 70vh;
+    }
+    .img2{ /* Animated Profile Picture */
+        max-width: 100%;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+    .middle-left{
+        /* border: 2px solid red; */
+        max-width: 100%;
+        height: 100%;
+    }
+    .middle-left h1{ /* Hello World!, I'm A */
+        color: var(--secondary-color);
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 4em;
+        
+    }
+    .echo-wave{  /* E C H O */
+        font-size: 6rem;
+    }
+    ul.socmed-icons1 {
+        margin-top: 2em;
+        justify-content: center;
+        position: relative;
+        display: flex;
+    }
+    .socmed-icons1  li {
+        position: relative;
+        list-style: none;
+        margin-left: 1em;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+    .socmed-icons1  li a {
+        text-decoration: none;
+        
+    }
+    .socmed-icons1  li a .fa-brands, .fa-regular {
+        font-size: 2em;
+        color: #222;
+    }
+    .socmed-icons1  li a::before {
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2em;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    .fa-solid.fa-bars{
+        display: none;
+    }
+    .fa-solid.fa-x{
+        display: none;
+    }
+}
+
+@media(min-width: 2560px){   /* 4K 2560px WHITE 4K 2560px WHITE  4K 2560px WHITE 4K 2560px WHITE 4K 2560px WHITE */
+    body{
+        border: 2px solid white;
+    }
+    .logo-title{ /*---ECHO---*//*Border: 2px solid violet*/
+        font-size: 1.7rem;
+        width: 9.375em;
+        display: flex;
+        border: 2px solid burlywood;
+        background-color: #353232;
+        border-radius: .625em;
+        transition: transform 0.3s ease;
+        color: burlywood;
+    }
+    .logo-title h1{ /*---ECHO---*//*Border: 2px solid white*/
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 12.5em;
+        height: 2em;
+        display: flex;
+        position: relative;
+        transition: .3s;
+    }
+    .logo-title h1 .ec{ /*---EC border: 2px solid pink;*/
+        color: burlywood;
+        cursor: pointer;
+        transition: transform .5s;
+    } 
+    .logo-title h1 .ho{ /*---HO border: 2px solid pink; */
+        color: burlywood;
+        cursor: pointer;
+        transition: transform .5s;
+    }
+    .logo-title h1 .ec:hover{  /*EC*/
+        color: black;
+        transition: .5s;
+        transform: scale(1.2) translateX(-8px);
+        padding: 4px;
+    }
+    .logo-title .ho:hover{ /*HO*/
+        color: whitesmoke;
+        transition: .5s;
+        transform: scale(1.2) translateX(8px) ;
+        padding: 4px;
+    } 
+    
+    .navigation ul li{
+        font-size: 3rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
+
+    }
+    .middle-front{
+        height: 70vh;
+    }
+    .img2{ /* Animated Profile Picture */
+        max-width: 100%;
+        height: 100%;
+    }
+    .middle-left{
+        /* border: 2px solid green; */
+    }
+
+    .middle-left h1{ /* Hello World!, I'm A */
+        color: var(--secondary-color);
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 5em;
+    }
+    .echo-wave{  /* E C H O */
+        font-size: 6vw;
+    }
+    .middle-left .echo{ /* E C H O */
+        cursor: pointer;
+        color: var(--secondary-color);
+        font-style: italic;
+        display: inline-block;
+        transition: transform .3s;
+        font-weight: 100;
+    } 
+    ul.socmed-icons1 {
+        margin-top: 2em;
+        justify-content: center;
+        position: relative;
+        display: flex;
+    }
+    .socmed-icons1  li {
+        position: relative;
+        list-style: none;
+        margin-left: 1em;
+        margin-right: 1em;
+        cursor: pointer;
+    }
+    .socmed-icons1  li a {
+        text-decoration: none;
+        
+    }
+    .socmed-icons1  li a .fa-brands, .fa-regular {
+        font-size: 2em;
+        color: #222;
+    }
+    .socmed-icons1  li a::before {
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2em;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    .fa-solid.fa-bars{
+        display: none;
+    }
+    .fa-solid.fa-x{
+        display: none;
+    }
+}

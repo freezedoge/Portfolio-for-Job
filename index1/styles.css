@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;  
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'sans-serif' , 'Cabin' ,'Young Serif', 'serif' , 'Montserrat';
+    
+    /* #EEEEEE(gray) #32E0C4(neon) #0D7377(teal) #212121(black) */
+}
+.dark{
+    --primary-color: #214778;
+    --secondary-color: burlywood;
+    --gradient2: linear-gradient(to top, #434343, #000000  );
+    --gradient: linear-gradient(to top, whitesmoke , #434343);
+}
+.white{
+    --gradient2: linear-gradient(to top, whitesmoke , #434343);
+    --gradient: linear-gradient(to top, #434343, #000000  );
+    --primary-color: burlywood;
+    --secondary-color: #214778;
+    background: white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, whitesmoke, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, whitesmoke, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+:root {
+    --primary-color: #214778;
+    --secondary-color: burlywood;
+    --text-color:  whitesmoke;
+    --text-color2: #848482;
+    --gradient: linear-gradient(to top, whitesmoke, #434343);
+    --gradient3: -webkit-linear-gradient(to top, whitesmoke, #434343); 
+    --gradient2: linear-gradient(to top, black, #434343);
+}
+body{
+    height: 100vh;
+    transition: all .3s ease-in-out;
+    background: white;
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    
+}
+.container{ /*Entire screen container*/
+    /* border: 2px solid green ; */
+    padding-left: .5rem;
+    padding-right: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 2560px; /*XXL*/  
+}
+.logo-title{ /*---ECHO---*//*Border: 2px solid violet*/
+    width: 9.375em;
+    display: flex;
+    border: 2px solid burlywood;
+    background-color: #353232;
+    border-radius: .625em;
+    transition: transform 0.3s ease;
+    color: burlywood;
+    /* Border: 2px solid violet; */
+}
+.logo-title h1{ /*---ECHO---*//*Border: 2px solid white*/
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 12.5em;
+    height: 2em;
+    display: flex;
+    position: relative;
+    transition: .3s;
+    /* Border: 2px solid white; */
+}
+.logo-title h1 .ec{ /*---EC border: 2px solid pink;*/
+    color: burlywood;
+    cursor: pointer;
+    transition: transform .5s;
+    /* border: 2px solid pink; */
+} 
+.logo-title h1 .ho{ /*---HO border: 2px solid pink; */
+    color: burlywood;
+    cursor: pointer;
+    transition: transform .5s;
+    /* border: 2px solid pink; */
+}
+.logo-title h1 .ec:hover{  /*EC*/
+    color: black;
+    transition: .5s;
+    transform: scale(1.2) translateX(-8px);
+    padding: 4px;
+}
+.logo-title .ho:hover{ /*HO*/
+    color: whitesmoke;
+    transition: .5s;
+    transform: scale(1.2) translateX(8px) ;
+    padding: 4px;
+} 
+.header{  /*LOGO and NAV*/ /*border: 2px solid green;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: 2px solid green;
+}
+.navigation ul li { /*border: 2px solid red;*/
+    list-style-type: none;
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    transition: .5s;  /*Transition for the entrance of the nav menus*/
+}
+.navigation ul li a{ /*The nav menu words themselves*/ /*border: 2px solid yellow;*/
+    padding: 5px;
+    /* border: 2px solid yellow; */
+    color: var(--primary-color);
+    display: inline-block;
+    transition: transform .3s;
+    font-style: italic;
+    font-weight: 500;
+}
+.navigation ul li a:hover{ /*The text themselves after hover*/
+    transform: scale(1.2) translateY(-10px) ;
+    text-shadow: var(--primary-color);
+    color: var(--primary-color);
+    opacity: 1;
+    background-color: transparent;
+}
+.navigation ul li a::before{ /*The text under*/
+    content: attr(data-text); 
+    position: absolute  ;
+    /* border: 2px solid green; */
+    bottom: 10px;
+    left: 25%;  
+    font-size: .5em;
+    color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: var(--primary-color);
+}
+.navigation li a:hover::before{
+    bottom: -10px;
+    /* border: 2px solid red; */
+    letter-spacing: 5px;
+    line-height: 1em;
+    opacity: .5;
+    /* transition-delay: .2s; */
+}
+.middle-front {
+    border: 2px solid red;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 800px;
+    /* width: 100%; */
+}
+.img2 { /* Profile Picture Animated */
+    max-width: 100%;
+}
+.middle-front h1{ /*Entire Text*/
+    line-height: 1.1;
+    margin-left: 10%;
+    border: 2px solid yellow;       
+    text-align: center;
+    color: var(--text-color2);
+    font-size: 2.5vw;;
+    font-weight: 100;
+    font-style: italic;
+} 
+.middle-left .echo{ /* ECHO */
+    cursor: pointer;
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 7.5vw;
+    display: inline-block;
+    transition: transform .3s;
+    font-weight: 100;
+    /* border: 2px solid green; */
+} 
+.echo:hover{
+    /* color: red; */
+    transform: translateY(-20px);
+    transition: .3s;
+}
+.fa-hand{ /* HAND ICON */
+    color: var(--secondary-color);  
+    /* opacity: 0; */
+    /* animation: slideLeft 1.8s ease forwards; */
+    /* border: 2px solid red; */
+    transition: .3s ease;
+    font-size: 6.5vw;
+    cursor: pointer;
+    display: inline-block; 
+}
+.fa-hand:hover{ /* HAND WAVE ANIMATION */
+    animation-name: wave-animation;
+    animation-duration: 3s;
+    transition: .3s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    /* color: var(--primary-color); */
+}
+.text{ /*Animated*/
+    display: inline-block;
+    color: var(--secondary-color) ; 
+    /* background-color: yellow; */
+    /* border: 2px solid green; */
+    font-size: 2vw;
+}
+.social-media-icons{
+    border-radius: 50px;
+}
+.hire-me {
+    margin: 1.25rem;
+}
+.hire{
+    font: inherit;
+    padding: 0.625em 0.625em;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    transition: transform .3s;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 3.125em;
+}
+.hire:hover{
+    text-shadow: 0 0 90px;
+    background-color: transparent;
+    /* color: var(--primary-color); */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------
+nav ul{
+    max-width: 1023px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+    position: absolute;
+    /* border: 2px solid green; */
+    display: inline-block;
+    list-style: none;
+    background: linear-gradient(to top, var(--sidemenu1) 0%, var(--sidemenu2) 100%);
+    /* background: linear-gradient(to top, #906d40a9 0%, #eacda3ec 100%); */
+    height: 100vh;
+    top: 0;
+    right: -200px;
+    padding-top: 3rem;
+}
+.navigation ul li {
+    margin: 0 1em 2.5em 1em;
+}
+.navigation ul li a{
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+
+}
+.navigation ul li a::before{
+    content: attr(data-text);
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    left: 200%;
+    transition: .5s;
+}
+.navigation ul li a:hover::before{
+    color: var(--secondary-color);
+    transform: translateY(80px);
+    transition: .5s;
+    opacity: 1;
+    
+}
