@@ -14,8 +14,6 @@
 *::before{
     box-sizing: border-box;
 }
-
-
 .dark{
     --secondary-color: #87ADDE;
     --primary-color: burlywood;
@@ -69,8 +67,7 @@ body{
 .header{
     font-size: 1.5rem;
     align-items: center;
-    width: 100%;
-    padding-top: 10px;
+    padding-top: 1rem;
     padding-left: 20px;
     padding-bottom: 2rem;
 }
